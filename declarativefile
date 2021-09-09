@@ -5,44 +5,20 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Hello World'
-            }
-        }
-    }
-}
-// Script //
-// Declarative //
-pipeline {
-    agent any
-    stages {
-        stage('deploy') {
+         stage('deploy') {
             steps { 
                 echo 'welcome to my jenkins  world'
-            }
-        }
-    }
-}
-// Script // 
-// Declarative //
-pipeline {
-    agent any
-    stages {
-        stage('test') {
+          stage('test') {
             steps { 
                 echo 'believe ur believeness'
-            }
-        }
-    }
-}
-// Script // 
-// Declarative //
-pipeline {
-    agent any
-    stages {
-        stage('deliver') {
+           stage('deliver') {
             steps { 
                 echo 'everyday come with new point'
+                    } 
+                  }   
+               }     
             }
         }
     }
 }
-// Script //
+ 

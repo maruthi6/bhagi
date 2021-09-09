@@ -1,24 +1,11 @@
-// Declarative //
 pipeline {
-    agent any
-    stages { 
-        stage('build') {
-            steps {
-                echo 'Hello World'
-         stage('deploy') {
-            steps { 
-                echo 'welcome to my jenkins  world'
-          stage('test') {
-            steps { 
-                echo 'believe ur believeness'
-           stage('deliver') {
-            steps { 
-                echo 'everyday come with new point'
-                    } 
-                  }   
-               }     
-            }
-        }
-    }
+   agent { label 'jdk8' }
+   stages {
+      stage('Say Hello') {
+         steps {
+            echo 'Hello World!'   
+            sh 'java -version'
+         }
+      }
+   }
 }
- 
